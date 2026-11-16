@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>حارة الياسمين</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=Tajawal:wght@400;500;700&display=swap">
+<style>
+:root{--bg:#F6F5F1;--surface:#FFFFFF;--ink:#1A2340;--muted:#55607A;--accent:#A3243B;--accent-ink:#FFFFFF;--gold:#B8913A;--line:#D9D6CC;--stone:#1A2340;--stone2:#ECE8DC;--hero:#1A2340;--hero-ink:#F6F5F1;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0F1426;--surface:#171E36;--ink:#EEF0F7;--muted:#A3ABC4;--accent:#D4475D;--line:#2B3454;--stone:#0A0E1C;--stone2:#C9C4B4;--hero:#0A0E1C;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0F1426;--surface:#171E36;--ink:#EEF0F7;--muted:#A3ABC4;--accent:#D4475D;--line:#2B3454;--stone:#0A0E1C;--stone2:#C9C4B4;--hero:#0A0E1C;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Tajawal,Tahoma,sans-serif;font-size:18px;line-height:1.8}
+h1,h2,h3{font-family:'Aref Ruqaa',Tahoma,serif;margin:0;line-height:1.3;font-weight:700}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+nav{display:flex;justify-content:space-between;align-items:center;padding:18px 0;color:var(--hero-ink)}
+nav b{font-family:'Aref Ruqaa',serif;font-size:24px}
+nav a.link{text-decoration:none;margin-inline-start:22px;font-size:16px}
+.hero{background:var(--hero);color:var(--hero-ink);padding-bottom:0;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;opacity:.09;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='none' stroke='%23fff' stroke-width='1.2'%3E%3Cpath d='M40 4 L48 22 L68 12 L58 32 L76 40 L58 48 L68 68 L48 58 L40 76 L32 58 L12 68 L22 48 L4 40 L22 32 L12 12 L32 22 Z'/%3E%3C/g%3E%3C/svg%3E")}
+.hero .wrap{position:relative}
+.arch{margin:24px auto 0;width:min(560px,92%);aspect-ratio:1/1.05;border-radius:999px 999px 0 0;padding:18px 18px 0;background:repeating-linear-gradient(180deg,var(--stone2) 0 34px,var(--stone) 34px 68px);box-shadow:0 0 0 3px var(--gold)}
+.arch>div{height:100%;border-radius:999px 999px 0 0;background:var(--accent);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:40px 24px 24px;color:#fff;box-shadow:inset 0 0 0 3px var(--gold)}
+.arch h1{font-size:clamp(56px,14vw,112px);line-height:1.15}
+.arch p{margin:10px 0 22px;max-width:19em;font-size:18px}
+.btn{display:inline-block;background:#fff;color:#7A1427;padding:11px 28px;border-radius:999px;font-weight:700;text-decoration:none;border:0;font:inherit;font-weight:700;cursor:pointer}
+.btn.solid{background:var(--accent);color:var(--accent-ink)}
+.meta{display:flex;justify-content:center;gap:28px;flex-wrap:wrap;font-size:15px;padding:18px 0;background:var(--stone);color:var(--hero-ink);position:relative}
+section{padding:72px 0}
+section h2{font-size:clamp(34px,6vw,52px);margin-bottom:6px;color:var(--accent)}
+.sub{color:var(--muted);margin:0 0 26px}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:22px}
+.tabs button{font:inherit;font-size:16px;padding:8px 20px;border-radius:999px;border:1.5px solid var(--line);background:transparent;color:var(--ink);cursor:pointer}
+.tabs button[aria-selected="true"]{background:var(--accent);color:#fff;border-color:var(--accent)}
+.menu{padding:0;margin:0;max-width:720px}
+.menu li{list-style:none;display:flex;align-items:baseline;gap:12px;padding:14px 0;border-bottom:2px dotted var(--line)}
+.menu .n{font-weight:700;font-size:19px}
+.menu .d{display:block;color:var(--muted);font-size:15px;font-weight:400}
+.menu .p{margin-inline-start:auto;font-weight:700;color:var(--gold);white-space:nowrap}
+.menu .p::after{content:" ج.م"}
+.about{background:var(--surface);border-block:8px solid transparent;border-image:repeating-linear-gradient(90deg,var(--stone) 0 28px,var(--stone2) 28px 56px) 8}
+.about .wrap{display:grid;gap:32px}
+.about p{max-width:36em;color:var(--muted);margin:0 0 14px}
+.grid h3{font-size:24px;color:var(--ink)}
+.grid p{margin:0 0 18px}
+form{display:grid;gap:14px;max-width:420px}
+label{font-size:15px;color:var(--muted);display:grid;gap:4px}
+input,select{font:inherit;padding:10px 14px;border-radius:10px;border:1.5px solid var(--line);background:var(--surface);color:var(--ink)}
+#ok{font-weight:700;min-height:1.8em}
+#qr svg{width:180px;height:180px;display:block;background:#fff;padding:10px;border-radius:12px}
+.qrbox{display:flex;gap:24px;align-items:center;flex-wrap:wrap}
+footer{padding:28px 0;color:var(--muted);font-size:14px;text-align:center;border-top:1px solid var(--line)}
+@media(min-width:800px){.about .wrap{grid-template-columns:1fr 1fr}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header class="hero">
+<div class="wrap">
+<nav><b>حارة الياسمين</b><div><a class="link" href="#menu">القائمة</a><a class="link" href="#about">حكايتنا</a><a class="link" href="#book">احجز</a></div></nav>
+<div class="arch"><div>
+<h1>حارة الياسمين</h1>
+<p>أكل شامي على أصوله، متل ما كانت تطبخ ستّي بالشام القديمة.</p>
+<a class="btn" href="#book">احجز طاولة</a>
+</div></div>
+</div>
+<div class="meta"><span>كل يوم من 12 الظهر لحد 1 بعد منتصف الليل</span><span>للحجز: ‎+20 109 680 9647</span></div>
+</header>
+
+<section id="menu"><div class="wrap">
+<h2>القائمة</h2>
+<p class="sub">كل شي بينعمل عنا بالبيت، وبيوصل لعندك سخن.</p>
+<div class="tabs" role="tablist" id="tabs"></div>
+<ul class="menu" id="list"></ul>
+</div></section>
+
+<section id="about" class="about"><div class="wrap">
+<div><h2>حكايتنا</h2>
+<p>فتحنا حارة الياسمين لنرجّع للناس طعم البيت الشامي: الكبة المقلية، والفتة بالسمنة، والكباب الحلبي على الفحم.</p>
+<p>الوصفات من مطابخ دمشق وحلب، والمكونات طازة كل صبح.</p></div>
+<div class="grid">
+<div><h3>على الفحم</h3><p>الكباب والشيش طاووق بينشووا ع نار هادية.</p></div>
+<div><h3>من إيد الستّ</h3><p>الكبة والمحاشي والشيش برك بتنعمل باليد كل يوم.</p></div>
+</div>
+</div></section>
+
+<section id="book"><div class="wrap">
+<h2>احجز طاولتك</h2>
+<p class="sub">تفضّلوا، الحارة مفتوحة لإلكن.</p>
+<form id="f">
+<label>الاسم<input name="n" required autocomplete="name"></label>
+<label>عدد الأشخاص<select name="g"><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>أكتر من 6</option></select></label>
+<label>التاريخ والوقت<input type="datetime-local" name="t" required></label>
+<button class="btn solid" type="submit">احجز</button>
+<div id="ok" role="status"></div>
+</form>
+</div></section>
+
+<section id="qrs" class="about"><div class="wrap qrbox" style="display:flex">
+<div id="qr" aria-label="باركود القائمة"></div>
+<div><h2>امسح وتفرّج</h2><p>صوّر الباركود بالموبايل لتفتح القائمة وتحجز طاولتك.</p></div>
+</div></section>
+
+<footer>© حارة الياسمين — الأسماء والأسعار والعنوان أمثلة، عدّلها على بياناتك.</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode-generator/1.4.4/qrcode.min.js"></script>
+<script>
+try{var q=qrcode(0,'M');q.addData(location.href.split('#')[0]);q.make();document.getElementById('qr').innerHTML=q.createSvgTag({cellSize:6,margin:0,scalable:true})}catch(e){document.getElementById('qrs').hidden=true}
+var M={"المقبلات":[["حمص بطحينة","حمص ناعم مع زيت الزيتون والصنوبر","60"],["متبّل","باذنجان مشوي مع طحينة ورمان","60"],["فتوش","خضرة طازة مع خبز محمّص ودبس الرمان","70"],["كبة مقلية","برغل ولحمة محشية بالجوز والبصل","110"]],
+"أطباق الشام":[["فتة مكدوس","مكدوس وزيت وخبز مقرمش ولبن","130"],["شيش برك","عجين صغير محشي لحمة بلبن وثوم","160"],["يبرق","ورق عنب محشي بالأرز واللحمة","150"],["محاشي","كوسا وباذنجان بصلصة البندورة","150"]],
+"المشاوي":[["كباب حلبي","لحمة ضاني مع كرز وصلصة بندورة","280"],["شيش طاووق","فروج متبّل بالثوم والليمون","220"],["مشاوي مشكّلة","كباب وشقف وطاووق للتشارك","420"]],
+"الحلويات":[["بقلاوة","فستق حلبي وقطر خفيف","90"],["بوظة بالفستق","بوظة عربية مدقوقة","80"],["عوامة","تنقلي بالقطر وتتقدم سخنة","70"]]};
+var tabs=document.getElementById('tabs'),list=document.getElementById('list');
+function show(k){
+ [].forEach.call(tabs.children,function(b){b.setAttribute('aria-selected',b.textContent===k)});
+ list.innerHTML=M[k].map(function(i){return '<li><span><span class="n">'+i[0]+'</span><span class="d">'+i[1]+'</span></span><span class="p">'+i[2]+'</span></li>'}).join('');
+}
+Object.keys(M).forEach(function(k){var b=document.createElement('button');b.type='button';b.setAttribute('role','tab');b.textContent=k;b.onclick=function(){show(k)};tabs.appendChild(b)});
+show(Object.keys(M)[0]);
+document.getElementById('f').addEventListener('submit',function(e){e.preventDefault();
+ var el=this.elements,WA='201096809647';
+ var msg='طلب حجز جديد%0Aالاسم: '+encodeURIComponent(el.n.value)+'%0Aعدد الأشخاص: '+encodeURIComponent(el.g.value)+'%0Aالموعد: '+encodeURIComponent(el.t.value.replace('T',' '));
+ var url='https://wa.me/'+WA+'?text='+msg,ok=document.getElementById('ok');
+ ok.innerHTML='يسلمو '+el.n.value.replace(/[<>&]/g,'')+'، كبّس الزر لتبعت الطلب عالواتساب: <a class="btn solid" target="_blank" rel="noopener" href="'+url+'">أرسل عالواتساب</a>';
+ this.reset()});
+</script>
+</body>
+</html>
